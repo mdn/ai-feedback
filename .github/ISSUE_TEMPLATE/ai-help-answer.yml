@@ -1,0 +1,40 @@
+name: "[reported via AI Help]"
+description: Issue filed via "Report an issue with this answer on GitHub" link on MDN AI Help.
+labels: ["via AI Help", "needs triage"]
+body:
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What is the issue with the answer?
+      description: What is wrong about it? How could it be improved?
+    validations:
+      required: true
+  - type: checkboxes
+    id: evaluation
+    attributes:
+      label: How would you categorize this issue?
+      options:
+        - label: The answer is harmful / unsafe.
+        - label: The answer is not correct.
+        - label: The answer is not helpful.
+  - type: textarea
+    id: questions
+    attributes:
+      label: What did you ask?
+      description: Set automatically. Do not modify.
+    validations:
+      required: true
+  - type: textarea
+    id: answer
+    attributes:
+      label: What did AI Help answer?
+      description: Set automatically. Do not modify.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: What MDN pages did AI Help consult?
+      description: Set automatically. Do not modify.
+    validations:
+      required: true
