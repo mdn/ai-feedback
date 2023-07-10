@@ -17,6 +17,7 @@ body:
         - label: The answer is harmful / unsafe.
         - label: The answer is not correct.
         - label: The answer is not helpful.
+        - label: The answer is outdated.
   - type: textarea
     id: questions
     attributes:
