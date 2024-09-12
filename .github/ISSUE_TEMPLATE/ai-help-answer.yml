@@ -39,3 +39,10 @@ body:
       description: Set automatically. Do not modify.
     validations:
       required: true
+  - type: input
+    id: model
+    attributes:
+      label: Which model generated the answer?
+      description: Set automatically. Do not modify.
+    validations:
+      required: true
